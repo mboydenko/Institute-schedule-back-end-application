@@ -1,0 +1,21 @@
+FIRST_LESSON_NAME    = "8:00 - 9:30"
+SECOND_LESSON_NAME   = "9:50 - 11:20"
+THIRD_LESSON_NAME    = "11:40 - 13:10"
+FOURTH_LESSON_NAME   = "13:20 - 14:50"
+FIFTH_LESSON_NAME    = "15:10 - 16:40"
+SIXTH_LESSON_NAME    = "16:50 - 18:20"
+SEVENTH_LESSON_NAME  = "16:50 - 18:20"
+
+LABORATORY_WORK_NAME = "Лабораторная работа"
+PRACTICE_NAME        = "Практика"
+LECTURE_NAME         = "Лекция"
+
+ODD_WEEK_NAME   = "Верхняя неделя"
+EVEN_WEEK_NAME  = "Нижняя неделя"
+
+MONDAY_NAME     = "Понедельник"
+TUESDAY_NAME    = "Вторник"
+WEDNESDAY_NAME  = "Среда"
+THURSDAY_NAME   = "Четверг"
+FRIDAY_NAME     = "Пятница"
+SATURDAY_NAME   = "Суббота"

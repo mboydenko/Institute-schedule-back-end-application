@@ -1,0 +1,7 @@
+from .chair_serializer import ChairSerializer
+from .building_serializer import BuildingSerializer
+from .group_serializer import GroupSerializer
+from .teacher_serializer import TeacherSerializer
+from .group_serializer import GroupSerializer
+from .classroom_serializer import ClassroomSerializer
+from .discipline_serializer import DisciplineSerializer
