@@ -12,7 +12,7 @@ class BuildingPropertySerializer(serializers.Serializer):
 class ClassroomSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
 
-    name = serializers.IntegerField(read_only=True)
+    name = serializers.CharField(read_only=True)
 
     building = BuildingPropertySerializer(read_only=True)
 

@@ -14,7 +14,7 @@ class BuildingList(APIView):
     def post(self, request: Request):
         building = Building()
         building.name = request.data['name']
-        building.short_name = request.data['sort_name']
+        building.short_name = request.data['short_name']
         building.save()
         data = building_serializer.BuildingSerializer(building).data
         return Response(data)
@@ -33,8 +33,8 @@ class BuildingDetails(APIView):
 
     def put(self, request: Request, id: int):
         building = self.get_object(id)
-        building.name = request['name']
-        building.short_name = request['short_name']
+        building.name = request.data['name']
+        building.short_name = request.data['short_name']
         building.save()
         data = building_serializer.BuildingSerializer(building).data
         return Response(data)

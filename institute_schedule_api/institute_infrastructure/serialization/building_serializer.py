@@ -11,7 +11,7 @@ class BuildingPreViewSerializer(serializers.Serializer):
 
     name = serializers.CharField(read_only=True)
 
-    shortName = serializers.CharField(read_only=True)
+    short_name = serializers.CharField(read_only=True)
 
 
 class BuildingSerializer(BuildingPreViewSerializer):

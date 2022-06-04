@@ -22,8 +22,8 @@ class ClassroomList(APIView):
 class ClassroomDetails(APIView):
     def get_object(self, pk: int) -> Classroom:
         try:
-            return Building.objects.get(pk=pk)
-        except Building.DoesNotExist:
+            return Classroom.objects.get(pk=pk)
+        except Classroom.DoesNotExist:
             raise Http404
     
     def get(self, request: Request, id: int):
@@ -33,8 +33,8 @@ class ClassroomDetails(APIView):
 
     def put(self, request: Request, id: int):
         classroom = self.get_object(id)
-        classroom.name = request['name']
-        classroom.building = request['building_id']
+        classroom.name = request.data['name']
+        classroom.building = Building.objects.get(pk=request.data['building_id'])
         classroom.save()
         data = classroom_serializer.ClassroomSerializer(classroom).data
         return Response(data)
